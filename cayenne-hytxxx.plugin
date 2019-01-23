@@ -1,0 +1,12 @@
+[HYT Temperature]
+enabled=true
+channel=0
+module=cayenne_hytxxx
+class=HYTXXX
+read=get_temperature
+
+[HYT Humidity]
+inherit=HYT Temperature
+enabled=true
+channel=1
+read=get_humidity
