@@ -19,7 +19,7 @@ from myDevices.devices.i2c import I2C
 from myDevices.utils.logger import info
 
 class HYTXXX(I2C):
-    """Class for interacting with an HYTXXX devices"""
+    """Class for interacting with an HYTXXX device."""
     VAL_RETRIES = 30
     
     def __init__(self, slave=0x28):
