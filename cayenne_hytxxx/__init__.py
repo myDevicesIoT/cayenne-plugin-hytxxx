@@ -79,7 +79,7 @@ class HYTXXX(I2C):
 
     def set_precision(self, value):
         """Set the precision for a float."""
-        return '{0:.2f}'.format(value)
+        return float('{0:.2f}'.format(value))
 
 
 class HYTXXXTest(HYTXXX):
